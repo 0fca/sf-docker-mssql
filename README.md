@@ -1,5 +1,28 @@
-# This is original README of the project accessible [here](https://github.com/eko/docker-symfony).
+# My changes
 
+As of the fact, this work is not whole mine, I would like to mention what I have exactly done here.
+
+I have extended nginx configuration for large file support: bigger then default POST max size as well as max packet size.
+This was just a little change.
+
+The bigger thing was to properly configure php-fpm container, thus I mean php7.4 with Sf4.4 to use MSSQL server.
+Used image is from official Microsoft DockerHub account. 
+
+I had to experiment with both drivers for SQL Server to get it working. I had a hard time working on it, thus I want this to pu accessible to anybody who finds this repo, while being in need.
+
+Ofc, any contributions are in order.
+
+Greetings.
+
+Software used:
+- tested for Sf4.4 + Sonata3,
+- MSSQL v.17,
+- nginx 1.19,
+- ELK as below, nothing has been changed,
+- php-fpm (fpm-fcgi) for php7.4
+
+
+# This is original README of the project accessible [here](https://github.com/eko/docker-symfony).
 docker-symfony
 ==============
 
